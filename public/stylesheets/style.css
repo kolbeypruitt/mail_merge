@@ -1,17 +1,29 @@
 .parent {
-  border: 5px red;
-  height: 200px;
+  border: 10px red;
+  height: 400px;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
+  background: green;
+  align-content: stretch;
 }
 .item {
-  border: 10px blue;
-  height: 50px;
-  margin: 5px;
-  background: darkblue;
+  width: 50%;
+  margin: 10px;
+  background: blue;
   color: white;
   line-height: 50px;
+  flex-direction: column;
+  justify-content: stretch;
+  align-content: stretch;
+}
+.subItem {
+  height: 50%;
+  margin: 5px;
+  background: orange;
+  flex-direction: row;
+  align-content: stretch;
+  justify-content: stretch;
 }
 
 body {

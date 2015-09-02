@@ -1,2 +1,9 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+<div class="parent"
+  <h1>{{title}}</h1>
+  <div class="item"><p>Enter names / emails (one per line)</p></div>
+  <div class="item"><p>Enter the text. The following substitutions are valid:</p>
+    <form action="/" method="post" >
+      <input type="textarea" name="unHipText" id="textBox" label="type your regular boring text here">
+      <input type="submit" id="submitBtn" value='Preview'>
+  </div>
+</div>

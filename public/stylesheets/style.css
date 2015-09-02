@@ -30,9 +30,10 @@
   width: 500px;
   height: 200px;
   background-color: #DDDDDD;
+  text-align: top-left; /* not sure how to justify the form field correctly*/
 }
 
-#emailSubject {
+#subject {
   width: 500px;
   height: 20px;
   background-color: #DDDDDD;
@@ -40,7 +41,7 @@
 
 #emailBody {
   width: 500px;
-  height: 120px;
+  height: 140px;
   background-color: #DDDDDD;
 }
 

@@ -1,9 +1,9 @@
 .parent {
   border: 10px red;
-  height: 400px;
+  height: 700px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   background: green;
   align-content: stretch;
 }
@@ -15,41 +15,37 @@
   color: white;
   line-height: 50px;
   flex-direction: column;
+  align-items: flex-end;
   justify-content: stretch;
-  align-content: stretch;
 }
 
 .subItem {
-  height: 50%;
+  height: 100px;
   margin: 20px;
   flex-direction: row;
-  align-content: stretch;
-  justify-content: stretch;
+  align-items: flex-end;
+  justify-content: space-between;
+/*  background: pink;*/
 }
 
 #namesEmails {
-  width: 400px;
-  height: 150px;
+  width: 500px;
+  height: 100px;
   background-color: #DDDDDD;
 }
 
 #emailSubject {
-  width: 300px;
+  width: 500px;
   height: 15px;
   background-color: #DDDDDD;
 }
 
 #emailBody {
-  width: 300px;
-  height: 80px;
+  width: 500px;
+  height: 100px;
   background-color: #DDDDDD;
 }
 
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
-
-a {
-  color: #00B7FF;
+.pSmall {
+    line-height: 120%;
 }

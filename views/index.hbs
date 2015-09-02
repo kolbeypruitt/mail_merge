@@ -1,7 +1,7 @@
 <div class="parent">
   <div class="item">
     <div class="subItem"><h1>{{title}}</h1></div>
-    <div class="subItem"><p>Enter names / emails (one per line)</p></div>
+    <div class="subItem"><h3>Enter names / emails (one per line)</h3></div>
         <div class="subItem">
       <form action="/" method="post">
         <input type="textarea" name="namesEmails" id="namesEmails" label="type your regular boring text here">
@@ -10,7 +10,13 @@
   </div>
 
   <div class="item">
-    <div class="subItem"><p>Enter the text. The following substitutions are valid:</p>
+    <div class="subItem">
+      <div class="pSmall">
+        <h3>Enter the text. The following substitutions are valid:</h3>
+          <li>{first}</li>
+          <li>{last}</li>
+          <li>{email}</li>
+      </div>
     </div>
     <div class="subItem">
       <form action="/" method="post">

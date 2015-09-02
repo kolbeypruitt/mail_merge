@@ -2,6 +2,11 @@
   <div class="item">
     <div class="subItem"><h1>{{title}}</h1></div>
     <div class="subItem"><p>Enter names / emails (one per line)</p></div>
+        <div class="subItem">
+      <form action="/" method="post">
+        <input type="textarea" name="namesEmails" id="namesEmails" label="type your regular boring text here">
+        <input type="submit" id="submitBtn" value='Preview'>
+    </div>
   </div>
 
   <div class="item">
@@ -9,17 +14,12 @@
     </div>
     <div class="subItem">
       <form action="/" method="post">
-        <input type="textarea" name="unHipText" id="textBox" label="type your regular boring text here">
+        <input type="textarea" name="emailSubject" id="emailSubject" label="type your regular boring text here">
         <input type="submit" id="submitBtn" value='Preview'>
     </div>
     <div class="subItem">
       <form action="/" method="post">
-        <input type="textarea" name="unHipText" id="textBox" label="type your regular boring text here">
-        <input type="submit" id="submitBtn" value='Preview'>
-    </div>
-    <div class="subItem">
-      <form action="/" method="post">
-        <input type="textarea" name="unHipText" id="textBox" label="type your regular boring text here">
+        <input type="textarea" name="emailBody" id="emailBody" label="type your regular boring text here">
         <input type="submit" id="submitBtn" value='Preview'>
     </div>
 </div>

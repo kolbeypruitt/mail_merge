@@ -1,5 +1,4 @@
 .parent {
-  border: 10px red;
   height: 700px;
   display: flex;
   flex-direction: row;
@@ -19,7 +18,7 @@
 }
 
 .subItem {
-  height: 100px;
+  height: 200px;
   margin: 20px;
   flex-direction: row;
   align-items: flex-end;
@@ -27,9 +26,9 @@
 /*  background: pink;*/
 }
 
-#namesEmails {
+#recipient {
   width: 500px;
-  height: 100px;
+  height: 200px;
   background-color: #DDDDDD;
 }
 
@@ -41,7 +40,7 @@
 
 #emailBody {
   width: 500px;
-  height: 100px;
+  height: 120px;
   background-color: #DDDDDD;
 }
 
@@ -64,3 +63,10 @@
   font-size: 16px;
   padding: 5px 10px 5px 10px;
   text-decoration: none;
+  float:right;
+  display:block;
+  margin-right: 60px;
+  clear:left;
+}
+
+

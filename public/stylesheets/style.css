@@ -4,15 +4,14 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  background: blue;
+  background-image: url("http://netdna.webdesignerdepot.com/uploads/2014/05/featured@wdd2x.jpg");
   align-content: stretch;
 }
 
 .item {
   width: 50%;
   margin: 10px;
-  background: blue;
-  color: white;
+  color: turquoise;
   line-height: 50px;
   flex-direction: column;
   align-items: flex-end;

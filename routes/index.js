@@ -9,20 +9,16 @@ router.get('/', function(req, res, next) {
    });
 });
 
-router.get('/preview', function(req, res, next) {
+router.post('/', function(req, res, next) {
   res.render('index', {
-    title: 'Mail Merge',
-    recipient: "req.body.recipient"
+    title: 'Merge',
+    recipient: req.body.recipient,
+    subject: req.body.subject,
+    emailBody: req.body.emailBody
    });
 });
 
+
+
+
 module.exports = router;
-
-
-// router.get('/', function(req, res, next) {
-//   res.render('index', {
-//     title: 'People Table',
-//     tableOutput: data.all });
-// });
-
-// req.body.unHipText

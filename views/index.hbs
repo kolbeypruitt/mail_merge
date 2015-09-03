@@ -4,8 +4,8 @@
       <h3>Enter names / emails (one per line)</h3>
     </div>
     <div class="subItem">
-      <form action="/preview" method="post">
-        <input type="textarea" name="recipient" id="recipient" value="Kolbey,Pruitt,k0lb3y@gmail.com" autofocus>
+      <form action="/" method="post">
+        <input type="textarea" name="recipient" id="recipient" value="Kolbey, Pruitt, k0lb3y@gmail.com" autofocus>
         </input>
     </div>
   </div>
@@ -18,24 +18,24 @@
           <li>{email}</li>
       </div>
     </div>
-    <div class="subItem">
-      <form action="/preview" method="post">
-        <input type="textarea" name="subject" id="subject" value="subject">
-        </input>
+      <div class="subItem">
+        <form action="/" method="post">
+          <input type="textarea" name="subject" id="subject" value="subject">
+          </input>
           <p></p>
-        <input type="textarea" name="emailBody" id="emailBody" value="body">
-        <input type="submit" class="btn" value='Preview'>
-    </div>
-    <div>
-      <table>
-        <tr>
-          <td>{{email.first_name}}</td>
-          <td>{{email.last_name}}</td>
-          <td>{{email.address}}</td>
-        </tr>
-      </table>
-    </div>
+          <input type="textarea" name="emailBody" id="emailBody" value="body">
+          </input>
+          <input type="submit" class="btn" value='Preview'>
+          </input>
+        </form>
+      </div>
+  </div>
 </div>
-
+<div>
+  <p>{{recipient}}</p>
+  <p>{{subject}}</p>
+  <p>{{emailBody}}</p>
+</div>
+</div>
 
 

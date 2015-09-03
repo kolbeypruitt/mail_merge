@@ -1,7 +1,40 @@
-      <table>  
-        for item, i in tableOutput
-          tr
-            td= item.first_name
-            td= item.last_name
-            td= item.date_of_birth
-      </table>
+<div class="parent">
+  <div class="item">
+    <div class="subItem"><h1>{{title}}</h1>
+      <h3>Enter names / emails (one per line)</h3>
+    </div>
+    <div class="subItem">
+      <form action="/preview" method="post">
+        <input type="textarea" name="recipient" id="recipient" value="Kolbey,Pruitt,k0lb3y@gmail.com" autofocus>
+        </input>
+    </div>
+  </div>
+  <div class="item">
+    <div class="subItem">
+      <div class="pSmall">
+        <h3>Enter the text. The following substitutions are valid:</h3>
+          <li>{first}</li>
+          <li>{last}</li>
+          <li>{email}</li>
+      </div>
+    </div>
+      <div class="subItem">
+        <form action="/preview" method="post">
+          <input type="textarea" name="subject" id="subject" value="subject">
+          </input>
+          <p></p>
+          <input type="textarea" name="emailBody" id="emailBody" value="body">
+          </input>
+          <input type="submit" class="btn" value='Preview'>
+          </input>
+        </form>
+      </div>
+    <div>
+      <h1>{{subject}}</h1>
+      <h1>{{recipient}}</h1>
+      <h1>{{recipient}}</h1>
+   </div>
+  </div>
+</div>
+
+

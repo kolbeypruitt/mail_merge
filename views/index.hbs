@@ -5,8 +5,8 @@
     </div>
     <div class="subItem">
       <form action="/" method="post">
-        <input type="textarea" name="recipient" id="recipient" value="Kolbey, Pruitt, k0lb3y@gmail.com" autofocus>
-        </input>
+        <textarea name="recipient" id="recipient" autofocus>Kolbey, Pruitt, k0lb3y@gmail.com</textarea>
+      </form>
     </div>
   </div>
   <div class="item">
@@ -20,22 +20,28 @@
     </div>
       <div class="subItem">
         <form action="/" method="post">
-          <input type="textarea" name="subject" id="subject" value="subject">
-          </input>
+          <textarea name="subject" id="subject">Email subject should go here.</textarea>
           <p></p>
-          <input type="textarea" name="emailBody" id="emailBody" value="body">
-          </input>
+          <textarea name="emailBody" id="emailBody">This is where your email body should go.</textarea>
           <input type="submit" class="btn" value='Preview'>
           </input>
         </form>
       </div>
   </div>
 </div>
+
 <div>
+
+ <for item, i in 
   <p>{{recipient}}</p>
   <p>{{subject}}</p>
   <p>{{emailBody}}</p>
 </div>
-</div>
+        for item, i in tableOutput
+          tr
+            td= item.first_name
+            td= item.last_name
+            td= item.date_of_birth
+
 
 

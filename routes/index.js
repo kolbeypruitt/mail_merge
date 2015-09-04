@@ -11,7 +11,7 @@ router.get('/', function(req, res, next) {
 
 router.post('/', function(req, res, next) {
   res.render('index', {
-    title: 'Merge',
+    title: 'Mail Merge',
     recipient: req.body.recipient,
     subject: req.body.subject,
     emailBody: req.body.emailBody
@@ -19,6 +19,12 @@ router.post('/', function(req, res, next) {
 });
 
 
-
-
 module.exports = router;
+
+function MakeEmail(recipient,subject,emailBody) {
+  this.recipient = recipient;
+  this.subject = subject;
+  this.emailBody = emailBody;
+}
+
+MakeEmail.prototype.constructor = MakeEmail;

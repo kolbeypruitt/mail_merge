@@ -4,9 +4,9 @@
       <h3>Enter names / emails (one per line)</h3>
     </div>
     <div class="subItem">
-      <form action="/" method="post">
-        <textarea name="recipient" id="recipient" autofocus>Kolbey, Pruitt, k0lb3y@gmail.com</textarea>
-      </form>
+      <form action="/preview" method="post">
+        <textarea name="recipient" id="recipient" autofocus>Kolbey, Pruitt, k0lb3y@gmail.com
+        </textarea>
     </div>
   </div>
   <div class="item">
@@ -18,30 +18,21 @@
           <li>{email}</li>
       </div>
     </div>
-      <div class="subItem">
-        <form action="/" method="post">
-          <textarea name="subject" id="subject">Email subject should go here.</textarea>
-          <p></p>
-          <textarea name="emailBody" id="emailBody">This is where your email body should go.</textarea>
-          <input type="submit" class="btn" value='Preview'>
-          </input>
-        </form>
-      </div>
+    <div class="subItem">
+      <textarea name="subject" id="subject">Email subject should go here.</textarea>
+      <p></p>
+      <textarea name="emailBody" id="emailBody">This is where your email body should go.</textarea>
+    </div>
+      <input type="submit" class="btn" value='Preview'></input>
+    </form>
   </div>
 </div>
-
 <div>
-
- <for item, i in 
-  <p>{{recipient}}</p>
-  <p>{{subject}}</p>
-  <p>{{emailBody}}</p>
+  {{#each emails}}
+    <p>{{recipient}}</p>
+    <p>{{subject}}</p>
+    <p>{{emailBody}}</p>
+  {{/each}}
 </div>
-        for item, i in tableOutput
-          tr
-            td= item.first_name
-            td= item.last_name
-            td= item.date_of_birth
-
 
 

@@ -9,22 +9,33 @@ router.get('/', function(req, res, next) {
    });
 });
 
-router.post('/', function(req, res, next) {
-  res.render('index', {
-    title: 'Mail Merge',
-    recipient: req.body.recipient,
-    subject: req.body.subject,
-    emailBody: req.body.emailBody
-   });
+router.post('/preview', function(req, res, next) {
+  function buildEmailObjects(requestBody) {
+ 
+    var arrayRecips = requestBody.recipient.split("\n");
+    var emails = [];
+    for (var i = 0; i < arrayRecips.length; i++) {
+      emails.push({recipient: arrayRecips[i],
+      subject: requestBody.subject,
+      emailBody: requestBody.emailBody})
+    }
+    return emails
+  }
+
+        // {emails:emailObjects = [{
+        //   recipient: req.body.recipient,
+        //   subject: req.body.subject,
+        //   emailBody: req.body.emailBody
+        //  }]}
+
+  var zebras = buildEmailObjects(req.body);
+  console.log(zebras);
+  res.render('index', { emails: zebras });
+  // console.log(req.body.recipient);
+  // console.log(req.body.subject);
+  // console.log(req.body.emailBody);
 });
 
 
 module.exports = router;
 
-function MakeEmail(recipient,subject,emailBody) {
-  this.recipient = recipient;
-  this.subject = subject;
-  this.emailBody = emailBody;
-}
-
-MakeEmail.prototype.constructor = MakeEmail;

@@ -1,5 +1,7 @@
+
+
 .parent {
-  height: 700px;
+  height: 500px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -18,7 +20,7 @@
 }
 
 .subItem {
-  height: 200px;
+  height: 195px;
   margin: 20px;
   flex-direction: row;
   align-items: flex-end;
@@ -28,21 +30,24 @@
 
 #recipient {
   width: 500px;
-  height: 200px;
+  height: 190px;
   background-color: #DDDDDD;
   text-align: top-left; /* not sure how to justify the form field correctly*/
+  font-size: 16px;
 }
 
 #subject {
   width: 500px;
   height: 20px;
   background-color: #DDDDDD;
+  font-size: 16px;
 }
 
 #emailBody {
   width: 500px;
   height: 140px;
   background-color: #DDDDDD;
+  font-size: 16px;
 }
 
 .pSmall {
@@ -66,9 +71,17 @@
   text-decoration: none;
   float:right;
   display:block;
-  margin-right: 60px;
+  margin-right: 80px;
   clear:left;
 }
 
+.emailprv {
+  background: #EDD06C;
+  color: #18374C;
+  height: 100px;
+  margin: 10px 10px;
+  border-radius: 10px;
+  border: outset #EAB33E;
+}
 
 

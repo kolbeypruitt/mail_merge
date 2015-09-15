@@ -5,8 +5,7 @@
     </div>
     <div class="subItem">
       <form action="/preview" method="post">
-        <textarea name="recipient" id="recipient" autofocus>Kolbey, Pruitt, k0lb3y@gmail.com
-        </textarea>
+        <textarea name="recipient" id="recipient" autofocus></textarea>
     </div>
   </div>
   <div class="item">
@@ -20,19 +19,20 @@
     </div>
     <div class="subItem">
       <textarea name="subject" id="subject">Email subject should go here.</textarea>
-      <p></p>
       <textarea name="emailBody" id="emailBody">This is where your email body should go.</textarea>
     </div>
       <input type="submit" class="btn" value='Preview'></input>
     </form>
   </div>
 </div>
-<div>
+
   {{#each emails}}
+  <div class="emailprv">
     <p>{{recipient}}</p>
     <p>{{subject}}</p>
     <p>{{emailBody}}</p>
+  </div>
   {{/each}}
-</div>
+
 
 
